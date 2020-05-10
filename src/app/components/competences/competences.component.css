@@ -118,6 +118,12 @@
   ul li:nth-child(7) a:before {
     background: #138a37;
   }
+  ul li:nth-child(8) a:before {
+    background: #000000;
+  }
+  ul li:nth-child(8) a:hover:before{
+    top:60%
+  }
 
 .iconTitle{
   color: white;
@@ -135,11 +141,10 @@
 /* ANIMATION  */
 @media screen and (min-width: 770px){
 ul li a:before{
+  background: none;
   animation: showAll 2s ease;
 }
-ul li a .icon, img{
-  animation: color 2s ease;
-}
+
 .hoverMe{
   animation: showHover 2s ease;
   display: block;
@@ -155,11 +160,7 @@ ul li a .icon, img{
   50%{ top:0%;}
   100%{top:100%;}
 }
-@keyframes color{
-  0%{filter: invert(0);}
-  50%{ filter: invert(1);}
-  100%{filter: invert(0);}
-}
+
 }
 
 /* RESPONSIVE  */
