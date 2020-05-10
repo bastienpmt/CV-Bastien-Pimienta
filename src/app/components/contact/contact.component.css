@@ -1,0 +1,46 @@
+.container-fluid{
+    height: 90vh;
+    overflow: hidden;
+    background: radial-gradient(circle, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.9) 50%, rgba(0,0,0,1) 100%), url(/assets/img/header/13382.jpg);
+}
+.container{
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+li img{
+    height: 25px;
+    margin-right: 10%;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    padding: 20px 0;    
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    letter-spacing: 5px;
+}
+hr{
+    background-color: rgb(122, 122, 122);
+    width: 20%;
+}
+li h3{
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    color: rgb(131, 131, 131);
+}
+a{
+    text-decoration: none;
+    color: unset;
+}
+@media screen and (max-width: 770px){
+    li{
+        font-size: 15px;
+    }
+}

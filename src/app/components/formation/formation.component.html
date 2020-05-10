@@ -1,0 +1,55 @@
+<app-navbar></app-navbar>
+
+<div class="container-fluid">
+    <div class="container">
+        <div class="gallery-wrap pb-2">
+          <div (click)="active(1)" [ngClass]="{'displayItem': displayContent1 === true}" class="item item-1">
+            <div class="itemText">
+                <div>
+                    <h3>Formation développeur web</h3>          
+                        <p>human booster | grenoble(38000)</p>
+                    <ul>
+                        <li>HTML/CSS/Bootstrap, Angular, Javascript/JQuery, PHP/PHP POO, Symfony, WordPress</li>
+                        <li>Méthode SCRUM</li>
+                        <li>Algorithmie</li>
+                    </ul>
+                        <p class="formationDate">2020 - Aujourd'hui</p>
+                </div>
+            </div>
+            <h4>Formation développeur web</h4>
+          </div>
+
+          <div (click)="active(2)" [ngClass]="{'displayItem': displayContent2 === true}" class="item item-2">
+            <div class="itemText">
+                <div>
+                    <h3>Licence économie et gestion</h3>  
+                    <p>Université grenoble-alpes | grenoble(38000)</p>
+                    <ul>
+                        <li>Formation à la comptabilité et à la gestion d'entreprises</li>
+                    </ul>
+                    <p class="formationDate">2017 - 2019</p>
+                </div>
+            </div>
+            <h4>licence économie-gestion</h4>
+          </div>
+
+          <div (click)="active(3)" [ngClass]="{'displayItem': displayContent3 === true}" class="item item-3">
+            <div class="itemText">
+                <div>
+                    <h3>Bac économique et social</h3>  
+                    <p>Lycée pierre du terrail | pontcharra(38530)</p>
+                    <ul>
+                        <li>Premières notions économiques</li>
+                    </ul>
+                    <p class="formationDate">2015 - 2017</p>
+                </div>
+            </div>
+            <h4>bac économique et social</h4>
+          </div>
+
+        </div>
+       <a class="text-light" routerLink="/infos">Voir mes projets en cours</a>
+       </div>    
+</div>
+
+<app-url-reference></app-url-reference>

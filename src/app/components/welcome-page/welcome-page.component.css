@@ -1,0 +1,74 @@
+.animationContainer{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 1;
+    transition: 1s;
+}
+#container1{
+    height: 100vh;
+    animation: display 2s;
+}
+#container2{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.4s;
+}
+span{
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+.condition{
+    opacity: 1!important;
+}
+@keyframes display{
+    from{margin: 0 50%}
+    to{margin: 0;}
+}
+
+.hideWelcomeMenu{
+    opacity: 0!important;
+}
+
+/* PROGRESS BAR  */
+.progress{
+    margin-top: 40px;
+    background-color: white;
+    width: 0;
+    height: 2px;
+}
+/* RESPONSIVE  */
+@media screen and (min-width: 640px){
+    .showProgress1{
+        width: 380px;
+        transition: 1.8s linear;
+    }
+    .showProgress2{
+        width: 550px;
+        transition: 1.8s linear;
+    }
+    .animationContainer{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 640px){
+    .showProgress1{
+        width: 200px;
+        transition: 1.8s linear;
+    }
+    .showProgress2{
+        width: 300px;
+        transition: 1.8s linear;
+    }
+    .animationContainer{
+        font-size: 25px;
+    }
+    .progress{
+        margin-top: 20px;
+    }
+}

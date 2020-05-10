@@ -1,0 +1,63 @@
+
+  <!-- As a heading -->
+  <nav class="navbar py-3 d-flex justify-content-between">
+    <div>
+      <li class="burgerMenu ml-3 d-block" (click)="activeCollapse()">
+        <div class="top"></div>
+        <div class="mid"></div>
+        <div class="bottom"></div>
+      </li>
+    </div>
+    <div class="navbar-brand p-0 m-0 h1 text-light">
+      <img src="assets/img/navbar/sign.png" routerLink="/home">
+    </div>
+    <div class="contactIcon mr-3 navbar-items text-light">
+      <img routerLink="/contact" src="assets/img/navbar/phone.png">
+    </div>
+  </nav>
+
+  <div *ngIf="collapseActive === true">
+    <div [ngClass]="{'color': collapseActive === true}" class="modal fade d-flex justify-content-start" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle">
+        <div class="menuActive" [ngClass]="{'displayMenu': collapseActive === true}">
+          <div class="closeModal ml-3 mt-3">
+            <img src="assets/img/navbar/menu/arrowLeft.png" (click)="activeCollapse()">
+          </div>
+          <div class="py-5 contentContainer">
+            <div class="logoModal text-center">
+            </div>
+            <div class="navbarConstruct">
+              <div class="menu-list">
+                <div><h4 class="menu-title mb-4">navigation</h4></div>
+                <div class="d-flex">
+                  <div class="translateDiv" [ngClass]="activeTranslate" [ngClass]="url"></div>
+                  <h4 class="menu-items" routerLinkActive="activeItem" routerLink="/home" (mouseover)="activeTranslate='home'" (click)="activeCollapse()"><img src="assets/img/navbar/menu/home.png">Acceuil</h4>
+                </div>
+                <h4 class="menu-items" routerLink="/profil" (mouseover)="activeTranslate='profil'" (click)="activeCollapse()"><img src="assets/img/navbar/menu/user.png">Mon profil</h4>
+                <h4 class="menu-items" routerLink="/competences" (mouseover)="activeTranslate='competences'" (click)="activeCollapse()"><img src="assets/img/navbar/menu/star.png">Compétences</h4>
+                <h4 class="menu-items" routerLink="/formation" (mouseover)="activeTranslate='formation'" (click)="activeCollapse()"><img src="assets/img/navbar/menu/business.png">Formation</h4>
+                <h4 class="menu-items" routerLink="/experience" (mouseover)="activeTranslate='experience'" (click)="activeCollapse()"><img src="assets/img/navbar/menu/list.png">Expériences</h4>
+                <h4 class="menu-items" routerLink="/contact" (mouseover)="randomClass() + activeTranslate='contact'" [ngClass]="randomNumber" (click)="activeCollapse()"><img src="assets/img/navbar/menu/mail.png">Contacts</h4>
+              </div>
+              <div class="downloadCV mb-5">
+                <div class="d-flex justify-content-center">
+                  <a routerLink="/infos">
+                    <img src="assets/img/navbar/menu/infos.png">
+                  </a>
+                  <a target="_blank" href="https://www.linkedin.com/in/bastien-pimienta-0732a219b/">
+                    <img src="assets/img/navbar/menu/linkedin.png">
+                  </a>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <button>
+                    <a href="assets/documents/CV-Bastien-Pimienta.pdf"
+                    download="CV Bastien Pimienta">Télécharger</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </div>
+
+  </div>

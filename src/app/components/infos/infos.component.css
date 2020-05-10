@@ -1,0 +1,35 @@
+.container-fluid{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    background: radial-gradient(circle, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.9) 50%, rgba(0,0,0,1) 100%), url(/assets/img/header/13382.jpg);
+}
+
+p{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+h3{
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    color: rgb(131, 131, 131);
+}
+
+/* CAROUSEL  */
+img {
+    height: 40vh!important;
+}
+a.carousel-control-prev-icon{
+    background-color: tomato!important;
+}
+@media screen and (max-width: 770px){
+    img {
+        height: 20vh!important;
+    }
+    .picsum-img-wrapper{
+        display: flex;
+        justify-content: center;
+    }
+}

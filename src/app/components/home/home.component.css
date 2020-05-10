@@ -1,0 +1,101 @@
+/* HEADER SIZE  */
+.homeSection{
+    height: 90vh;
+    width: 100%;
+    overflow: hidden;
+}
+.headerHome{
+    position: absolute;
+    width: 80%;
+    margin-left: 20%;
+    height: 90vh;
+    background: radial-gradient(rgba(0,0,0,0) 20%, black 70%), url(/assets/img/header/13382.jpg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.headerHome img{
+    height: 100%;
+}
+
+/* TEXT  */
+.keyWords h2{
+    font-weight: lighter;
+    text-transform: uppercase;
+    color: white;
+    font-size: 40px;
+    letter-spacing: 10px;
+    margin: 20px 0;
+    transition: 0.15s;
+}
+.keyWords{
+    width: 200px;
+    position: relative;
+    top: 25%;
+    left: 10%;
+}
+.keyWords div:hover h2{
+    cursor: default;
+    opacity: 1!important;
+    transition: 0.2s;
+}
+.keyWords:hover h2{
+    opacity: 0.3;
+    transition: 0.2s;
+}
+/* HIDDEN TEXT  */
+.hiddenText{
+    color: rgb(240, 218, 218);
+    position: relative;
+    left: 25%;
+    transition: 0.3s;
+    display: none;
+}
+
+/* HOVER EFFECT  */
+.ambitionsLabel:hover .ambitionsText{
+    animation: fondu 0.4s;
+    display: block;
+    transition: 0.3s;
+}
+.ambitionsText{
+    bottom: 30px;
+}
+.determinationLabel:hover .determinationText{
+    animation: fondu 0.4s;
+    opacity: 1;
+    display: block;
+    transition: 0.3s;
+}
+.determinationText{
+    top: 40px;
+}
+.travailLabel:hover .travailText{
+    animation: fondu 0.4s;
+    opacity: 1;
+    display: block;
+    transition: 0.3s;
+}
+.travailText{
+    top: 90px;
+}
+.keyWords:hover{
+    width: unset;
+}
+@keyframes fondu{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+
+
+/* RESPONSIVE  */
+
+@media screen and (max-width: 770px){
+    .keyWords h2{
+        font-size: 28px;
+    }
+    .hiddenText{
+        display: none!important;
+    }
+}

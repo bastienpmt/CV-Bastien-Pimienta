@@ -1,0 +1,50 @@
+<app-navbar></app-navbar>
+
+<div class="container-fluid">
+            <div class="profilPhoto">
+            </div>
+
+            <div class="textBlock">
+              <div>
+                <div class="name">
+                  <h1>Bastien <br><span>Pimienta</span></h1>
+                  <p>développeur web fullstack</p>   
+                </div>
+                <p class="profilText mt-4">
+                  <img src="assets/img/profil/quote.png">Après 2 années de fac d'économie-gestion à Grenoble, j'ai décidé de me consacrer au développement web, une passion qui m'est venu après un stage chez un développeur web freelance.<img src="assets/img/profil/quote2.png">
+                </p> 
+              </div>  
+              <div class="infoContainer p-4">
+                  <div [ngClass]="{'displayLanguage': languageLevel ===true }" class="keyWords">
+                    <div class="buttonCollapse" (click)="languageLevel = !languageLevel ; showPoints = showPoints + 1; completePoints()">
+                      <h3>langues</h3>
+                       <div class="languageLevel">
+                        <div class="français">
+                          <p>Français :</p><i class="far fa-circle"></i><i class="far fa-circle"></i><i class="fas fa-circle"></i><i class="far fa-circle"></i><i class="far fa-circle"></i>
+                        </div>
+                        <div class="anglais">
+                          <p>Anglais :</p><i class="far fa-circle"></i><i class="far fa-circle"></i><i class="far fa-circle"></i><i class="far fa-circle"></i><i class="far fa-circle"></i>
+                        </div>
+                        <div class="espagnol mb-0">
+                          <p>Espagnol :</p><i class="far fa-circle"></i><i class="far fa-circle"></i><i class="far fa-circle"></i><i class="far fa-circle"></i><i class="far fa-circle"></i>
+                        </div>
+                      </div>  
+                    </div>
+                  </div>
+                  <div [ngClass]="{'displayKeyWords':profilInfo === true}" class="keyWords">
+                    <div class="buttonCollapse" (click)="profilInfo= !profilInfo">
+                      <h3>about me</h3>
+                      <div class="profilInfo">
+                        <h4>20 ans</h4>
+                        <h4>200 allée de gratigny <img src="assets/img/profil/interface.png"></h4>
+                        <h4>38530 Chapareillan <img src="assets/img/profil/interface.png"></h4>
+                        <h4>Permis B - Véhiculé</h4>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+            </div>
+</div>
+
+<app-url-reference></app-url-reference>
