@@ -1,4 +1,4 @@
-.animationContainer{
+/* .animationContainer{
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -33,17 +33,17 @@ span{
 
 .hideWelcomeMenu{
     opacity: 0!important;
-}
+} */
 
 /* PROGRESS BAR  */
-.progress{
+/* .progress{
     margin-top: 40px;
     background-color: white;
     width: 0;
     height: 2px;
-}
+} */
 /* RESPONSIVE  */
-@media screen and (min-width: 640px){
+/* @media screen and (min-width: 640px){
     .showProgress1{
         width: 380px;
         transition: 1.8s linear;
@@ -71,4 +71,4 @@ span{
     .progress{
         margin-top: 20px;
     }
-}
+} */

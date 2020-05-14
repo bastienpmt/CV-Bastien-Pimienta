@@ -11,7 +11,7 @@ import { InfosComponent } from './components/infos/infos.component';
 
 
 const routes: Routes = [
-  { path: '', component: WelcomePageComponent },
+  { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'navbar', component: HomeComponent },
   { path: 'competences', component: CompetencesComponent },
